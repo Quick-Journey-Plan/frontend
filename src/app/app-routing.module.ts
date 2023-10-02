@@ -12,9 +12,9 @@ const routes: Routes = [
     component: DefaultComponent,
     children: [
       { path: '', component: HomeComponent },
-      { path: 'imprint', component: ImprintComponent },
     ]
   },
+  { path: 'imprint', component: ImprintComponent },
   {
     path: 'dashboard',
     component: DashboardComponent,
