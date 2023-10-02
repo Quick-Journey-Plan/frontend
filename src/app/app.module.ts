@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { DefaultComponent } from './shared/layout/default/default.component';
 import { DashboardComponent } from './shared/layout/dashboard/dashboard.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ImprintComponent } from './pages/imprint/imprint.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DefaultComponent,
     DashboardComponent,
-    HomeComponent
+    HomeComponent,
+    ImprintComponent
   ],
   imports: [
     BrowserModule,
