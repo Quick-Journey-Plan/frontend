@@ -7,6 +7,7 @@ import { DefaultComponent } from './shared/layout/default/default.component';
 import { DashboardComponent } from './shared/layout/dashboard/dashboard.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ImprintComponent } from './pages/imprint/imprint.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ImprintComponent } from './pages/imprint/imprint.component';
     DefaultComponent,
     DashboardComponent,
     HomeComponent,
-    ImprintComponent
+    ImprintComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
