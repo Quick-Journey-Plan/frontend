@@ -79,7 +79,7 @@ body {
 /*header section*/
 .hero_area {
   height: calc(100vh - 30px);
-  background: linear-gradient(to right, $primary2 55%, $primary1 55%);
+  background: linear-gradient(to right, $primary2 55%, $white 55%);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -197,16 +197,6 @@ a:focus {
   height: 70px;
 }
 
-.custom_nav-container .navbar-toggler {
-  outline: none;
-
-  .navbar-toggler-icon {
-    background-image: url(./assets/images/menu.png);
-    background-size: 30px;
-    width: 32px;
-    height: 32px;
-  }
-}
 
 .lg_toggl-btn {
   background-color: transparent;
@@ -766,7 +756,7 @@ a:focus {
   display: block;
   width: 34px;
   height: 4px;
-  background-color: #fff;
+  background-color: $primary2;
   margin: 7px 0;
   transition: all 0.3s;
   border-radius: 10px;
