@@ -11,6 +11,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeroAreaComponent } from './shared/components/hero-area/hero-area.component';
+import { InfoComponent } from './shared/components/info/info.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeroAreaComponent } from './shared/components/hero-area/hero-area.compo
     NotFoundComponent,
     HeaderComponent,
     FooterComponent,
-    HeroAreaComponent
+    HeroAreaComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
