@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  public showMenu: boolean = false;
 
+  public toggleMenu() {
+    this.showMenu = !this.showMenu;
+  }
 }
