@@ -28,7 +28,7 @@ import { InfoComponent } from './shared/components/info/info.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
