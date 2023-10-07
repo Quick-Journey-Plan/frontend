@@ -14,7 +14,8 @@ import { HeroAreaComponent } from './shared/components/hero-area/hero-area.compo
 import { InfoComponent } from './shared/components/info/info.component';
 import { TextMediaComponent } from './shared/components/text-media/text-media.component';
 import { TextMediaInputComponent } from './shared/components/text-media-input/text-media-input.component';
-import { NeutralComponent } from './shared/layouts/neutral/neutral.component';
+import { NeutralComponent } from './shared/layout/neutral/neutral.component';
+import { ImageComponent } from './shared/components/image/image.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NeutralComponent } from './shared/layouts/neutral/neutral.component';
     InfoComponent,
     TextMediaComponent,
     TextMediaInputComponent,
-    NeutralComponent
+    NeutralComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,

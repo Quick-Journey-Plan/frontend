@@ -87,6 +87,7 @@ body {
   border-radius: 0;
   padding: 10px 30px 10px 30px;
 }
+
 .custom_button_red:hover {
   background-color: transparent;
   border: 1px solid $btnColor;
@@ -100,7 +101,6 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-
 }
 
 .sub_page {
@@ -205,6 +205,36 @@ a:focus {
     font-weight: bold;
     color: $white;
     font-size: 24px;
+  }
+}
+
+.text-blue {
+  header {
+    border-bottom: 1px solid $primary2;
+  }
+  .navbar-brand {
+    color: $primary2;
+
+    span {
+      color: $primary2;
+
+      &:hover {
+        color: $btnColor;
+      }
+    }
+
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $primary2 !important;
+
+        &:hover {
+          color: $btnColor !important;
+        }
+      }
+    }
   }
 }
 
