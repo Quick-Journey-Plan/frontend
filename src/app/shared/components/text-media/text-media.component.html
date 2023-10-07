@@ -6,18 +6,21 @@
                     <div class="col-md-5 offset-md-1">
                         <div class="detail-box">
                             <h1>{{ content.title }}</h1>
-                            <p>{{ content.description }}</p>
+                            <p [innerHTML]="content.description"></p>
+                            <!-- <p>{{ content.description }}</p> -->
                             <div class="btn-box">
-                                <a [routerLink]="internLink.href" class="btn-1 text-decoration-none" *ngIf="internLink">{{
+                                <a [routerLink]="internLink.href" class="btn-1 text-decoration-none"
+                                    *ngIf="internLink">{{
                                     internLink.title }}</a>
-                                <a href="{{ externLink.href }}" class="btn-2 text-decoration-none" *ngIf="externLink">{{ externLink.title
+                                <a href="{{ externLink.href }}" class="btn-2 text-decoration-none" *ngIf="externLink">{{
+                                    externLink.title
                                     }}</a>
                             </div>
                         </div>
                     </div>
                     <div class="offset-md-1 col-md-4 img-container">
                         <div class="img-box">
-                            <img src="{{image.src}}" alt="{{image.alt}}">
+                            <app-image [image]="image"></app-image>
                         </div>
                     </div>
                 </div>
