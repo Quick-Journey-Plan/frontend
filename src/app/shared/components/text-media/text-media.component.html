@@ -8,18 +8,16 @@
                             <h1>{{ content.title }}</h1>
                             <p>{{ content.description }}</p>
                             <div class="btn-box">
-                                <a href="" class="btn-1">
-                                    About Us
-                                </a>
-                                <a href="" class="btn-2">
-                                    Get A Quote
-                                </a>
+                                <a [routerLink]="internLink.href" class="btn-1" *ngIf="internLink">{{
+                                    internLink.title }}</a>
+                                <a href="{{ externLink.href }}" class="btn-2" *ngIf="externLink">{{ externLink.title
+                                    }}</a>
                             </div>
                         </div>
                     </div>
                     <div class="offset-md-1 col-md-4 img-container">
                         <div class="img-box">
-                            <img src="assets/images/airplane_quick_journey.png" alt="Quick Jorney Planer">
+                            <img src="{{image.src}}" alt="{{image.alt}}">
                         </div>
                     </div>
                 </div>
