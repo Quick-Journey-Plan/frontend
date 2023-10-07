@@ -8,9 +8,9 @@
                             <h1>{{ content.title }}</h1>
                             <p>{{ content.description }}</p>
                             <div class="btn-box">
-                                <a [routerLink]="internLink.href" class="btn-1" *ngIf="internLink">{{
+                                <a [routerLink]="internLink.href" class="btn-1 text-decoration-none" *ngIf="internLink">{{
                                     internLink.title }}</a>
-                                <a href="{{ externLink.href }}" class="btn-2" *ngIf="externLink">{{ externLink.title
+                                <a href="{{ externLink.href }}" class="btn-2 text-decoration-none" *ngIf="externLink">{{ externLink.title
                                     }}</a>
                             </div>
                         </div>

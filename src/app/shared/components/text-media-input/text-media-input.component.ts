@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Content, Image } from '@app/shared/interfaces';
 
 @Component({
   selector: 'app-text-media-input',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./text-media-input.component.scss']
 })
 export class TextMediaInputComponent {
+  @Input()
+  public content: Content = { title: '', description: '' };
 
+  @Input()
+  public image: Image = { src: '', alt: '' };
 }
