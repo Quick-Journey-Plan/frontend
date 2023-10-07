@@ -76,6 +76,23 @@ body {
   }
 }
 
+/* General */
+.custom_button_red {
+  display: inline-block;
+  padding: 10px 0;
+  background-color: $btnColor;
+  color: $white;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 10px 30px 10px 30px;
+}
+.custom_button_red:hover {
+  background-color: transparent;
+  border: 1px solid $btnColor;
+  color: $btnColor;
+}
+
 /*header section*/
 .hero_area {
   height: calc(100vh - 30px);
@@ -378,7 +395,7 @@ a:focus {
 
   .img-box {
     img {
-      width: 100%;
+      width: 50%;
     }
   }
 

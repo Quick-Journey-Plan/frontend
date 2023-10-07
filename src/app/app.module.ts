@@ -13,6 +13,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeroAreaComponent } from './shared/components/hero-area/hero-area.component';
 import { InfoComponent } from './shared/components/info/info.component';
 import { TextMediaComponent } from './shared/components/text-media/text-media.component';
+import { TextMediaInputComponent } from './shared/components/text-media-input/text-media-input.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TextMediaComponent } from './shared/components/text-media/text-media.co
     FooterComponent,
     HeroAreaComponent,
     InfoComponent,
-    TextMediaComponent
+    TextMediaComponent,
+    TextMediaInputComponent
   ],
   imports: [
     BrowserModule,
