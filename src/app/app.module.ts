@@ -16,6 +16,7 @@ import { TextMediaComponent } from './shared/components/text-media/text-media.co
 import { TextMediaInputComponent } from './shared/components/text-media-input/text-media-input.component';
 import { NeutralComponent } from './shared/layout/neutral/neutral.component';
 import { ImageComponent } from './shared/components/image/image.component';
+import { TextContentComponent } from './shared/components/text-content/text-content.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ImageComponent } from './shared/components/image/image.component';
     TextMediaComponent,
     TextMediaInputComponent,
     NeutralComponent,
-    ImageComponent
+    ImageComponent,
+    TextContentComponent
   ],
   imports: [
     BrowserModule,
