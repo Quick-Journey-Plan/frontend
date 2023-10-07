@@ -5,6 +5,7 @@ import { DashboardComponent } from './shared/layout/dashboard/dashboard.componen
 import { HomeComponent } from './pages/home/home.component';
 import { ImprintComponent } from './pages/imprint/imprint.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { NeutralComponent } from './shared/layouts/neutral/neutral.component';
 
 const routes: Routes = [
   {
@@ -12,15 +13,25 @@ const routes: Routes = [
     component: DefaultComponent,
     children: [
       { path: '', component: HomeComponent },
+      { path: 'home', component: HomeComponent },
     ]
   },
-  { path: 'imprint', component: ImprintComponent },
   {
     path: 'dashboard',
     component: DashboardComponent,
     children: []
   },
-  { path: '**', component: NotFoundComponent },
+  {
+    path: 'imprint',
+    component: NeutralComponent,
+    children: [
+      { path: '', component: ImprintComponent },
+    ]
+  },
+  {
+    path: '**',
+    component: NeutralComponent,
+  },
 ];
 
 @NgModule({
