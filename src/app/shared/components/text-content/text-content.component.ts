@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Content, Link } from '@app/shared/interfaces';
 
 @Component({
   selector: 'app-text-content',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./text-content.component.scss']
 })
 export class TextContentComponent {
+  @Input()
+  public content: Content = { title: '', description: '' };
 
+  @Input()
+  public link: Link = { title: '', href: '' };
 }
