@@ -13,7 +13,7 @@ export class HomeComponent {
   }
 
   public searchFieldImage: Image = {
-    src: 'assets/images/location.png',
+    src: 'assets/images/airplain_map.png',
     alt: 'Quick Journey Planer'
   }
 }
