@@ -1,30 +1,20 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-5 offset-md-1">
-                        <div class="detail-box">
-                            <h1>{{ content.title }}</h1>
-                            <p [innerHTML]="content.description"></p>
-                            <!-- <p>{{ content.description }}</p> -->
-                            <div class="btn-box">
-                                <a [routerLink]="internLink.href" class="btn-1 text-decoration-none"
-                                    *ngIf="internLink">{{
-                                    internLink.title }}</a>
-                                <a href="{{ externLink.href }}" class="btn-2 text-decoration-none" *ngIf="externLink">{{
-                                    externLink.title
-                                    }}</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offset-md-1 col-md-4 img-container">
-                        <div class="img-box">
-                            <app-image [image]="image"></app-image>
-                        </div>
-                    </div>
-                </div>
+<div class="row">
+    <div class="col-md-5">
+        <div class="detail-box">
+            <h1>{{ content.title }}</h1>
+            <p [innerHTML]="content.description"></p>
+            <div class="btn-box">
+                <a [routerLink]="internLink.href" class="btn btn-primary text-decoration-none" *ngIf="internLink">{{
+                    internLink.title }}</a>
+                <a href="{{ externLink.href }}" class="btn btn-outline-danger text-decoration-none" *ngIf="externLink">{{
+                    externLink.title
+                    }}</a>
             </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="img-box">
+            <app-image [image]="image"></app-image>
         </div>
     </div>
 </div>

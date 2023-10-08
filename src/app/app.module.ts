@@ -10,7 +10,6 @@ import { ImprintComponent } from './pages/imprint/imprint.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { InfoComponent } from './shared/components/info/info.component';
 import { TextMediaComponent } from './shared/components/text-media/text-media.component';
 import { TextMediaInputComponent } from './shared/components/text-media-input/text-media-input.component';
 import { ImageComponent } from './shared/components/image/image.component';
@@ -26,7 +25,6 @@ import { TextContentComponent } from './shared/components/text-content/text-cont
     NotFoundComponent,
     HeaderComponent,
     FooterComponent,
-    InfoComponent,
     TextMediaComponent,
     TextMediaInputComponent,
     ImageComponent,
