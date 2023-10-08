@@ -10,11 +10,8 @@ import { ImprintComponent } from './pages/imprint/imprint.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { HeroAreaComponent } from './shared/components/hero-area/hero-area.component';
-import { InfoComponent } from './shared/components/info/info.component';
 import { TextMediaComponent } from './shared/components/text-media/text-media.component';
 import { TextMediaInputComponent } from './shared/components/text-media-input/text-media-input.component';
-import { NeutralComponent } from './shared/layout/neutral/neutral.component';
 import { ImageComponent } from './shared/components/image/image.component';
 import { TextContentComponent } from './shared/components/text-content/text-content.component';
 
@@ -28,11 +25,8 @@ import { TextContentComponent } from './shared/components/text-content/text-cont
     NotFoundComponent,
     HeaderComponent,
     FooterComponent,
-    HeroAreaComponent,
-    InfoComponent,
     TextMediaComponent,
     TextMediaInputComponent,
-    NeutralComponent,
     ImageComponent,
     TextContentComponent
   ],

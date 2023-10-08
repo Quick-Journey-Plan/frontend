@@ -1,8 +1,21 @@
-<footer class="container-fluid footer_section ">
-    <div class="container">
-        <p>
-            {{date}} - Developed by
-            <a href="https://rahimli.net" target="_blank">Jeyhun Rahimli</a>
-        </p>
+<div class="position-absolute w-100 bottom-0">
+    <div class="footer">
+        <div class="container d-flex justify-content-between pt-3 pb-3">
+            <div>
+                <img src="assets/images/airplain.png" alt="Quick-Journey Planer Logo" />
+                <span class="fs-3 fw-bold text-white">Quick Journey Planer</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <a [routerLink]="['/imprint']" class="text-white text-decoration-none">Imprint</a>
+            </div>
+        </div>
     </div>
-</footer>
+    
+    <footer class="p-2 mt-2">
+        <div class="container">
+            <p class="text-center">
+                {{date}} - Developed by <a href="https://rahimli.net" target="_blank" class="text-dark">Jeyhun Rahimli</a>
+            </p>
+        </div>
+    </footer>
+</div>
