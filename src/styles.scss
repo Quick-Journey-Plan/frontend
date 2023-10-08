@@ -45,10 +45,10 @@ body {
 }
 
 /* General */
-.custom_button_red {
+.custom_button_red,
+.custom_button_blue {
   display: inline-block;
   padding: 10px 0;
-  background-color: $btnColor;
   color: $white;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -60,6 +60,14 @@ body {
   background-color: transparent;
   border: 1px solid $btnColor;
   color: $btnColor;
+}
+
+.custom_button_red {
+  background-color: $btnColor;
+}
+
+.custom_button_blue {
+  background-color: $primary2;
 }
 
 .heading_container {
