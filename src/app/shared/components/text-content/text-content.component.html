@@ -1,3 +1,3 @@
 <h2> {{ content.title }} </h2>
-<p> {{ content.description }} </p>
+<p [innerHTML]="content.description"></p>
 <a [routerLink]="link.href" *ngIf="link" class="text-decoration-none">{{link.title }}</a>

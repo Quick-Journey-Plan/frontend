@@ -9,12 +9,12 @@ import { Content, Image } from '@app/shared/interfaces';
 export class ImprintComponent {
   @Input()
   public content: Content = {
-    title: "Imprint", description: `
-    This website was set up by Jeyhun Rahimli for the learning project. <br /> 
-    Name: <b>Jeyhun Rahimli</b> <br />
+    title: "Imprint", description: ` 
+    Name: <b>Quick-Journey</b> <br />
     Email: <a href='mailto:mail@rahimli.net'>mail@rahimli.net</a> <br />
-    Website: <a href="https://rahimli.net">rahimli.net</a>` };
+    Website: <a href="https://www.quick-journey.com">www.quick-journey.com</a> <br /> <br />
+    <b> Note: </b> This website was developed by <a href="https://rahimli.net">Jeyhun Rahimli</a> for the purpose of learning. <br />` };
 
   @Input()
-  public image: Image = { src: 'assets/images/airplain_2.png', alt: '' };
+  public image: Image = { src: 'assets/images/world_airplain.png', alt: 'Quick Journey Plan Imprint' };
 }

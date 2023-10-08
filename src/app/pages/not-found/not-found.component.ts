@@ -10,4 +10,5 @@ export class NotFoundComponent {
   public content: Content = { title: '404', description: 'Page Not Found' };
   public link: Link = { title: 'Back', href: '/' };
   public image: Image = { src: 'assets/images/404.png', alt: 'Quick Journey Planer Not Found' };
+  public externLink: Link = { title: 'Support us', href: 'https://github.com/jeyhunr' };
 }

@@ -1,14 +1,3 @@
-<section class="not-found">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-lg-9 mx-auto">
-                <div class="img-box">
-                    <app-image [image]="image"></app-image>
-                </div>
-            </div>
-        </div>
-        <div class="detail-box">
-            <app-text-content [content]="content" [link]="link"></app-text-content>
-        </div>
-    </div>
-</section>
+<div class="not-found container">
+    <app-text-media [content]="content" [image]="image" [internLink]="link" [externLink]="externLink"></app-text-media>
+</div>

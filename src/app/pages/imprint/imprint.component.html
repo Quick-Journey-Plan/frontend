@@ -1,3 +1,10 @@
 <div class="container">
-    <app-text-media [content]="content" [image]="image"></app-text-media>
+    <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+            <app-text-content [content]="content"></app-text-content>
+        </div>
+        <div class="col-md-6">
+            <app-image [image]="image"></app-image>
+        </div>
+    </div>
 </div>
