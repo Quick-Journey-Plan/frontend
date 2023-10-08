@@ -4,7 +4,6 @@ import { DefaultComponent } from './shared/layout/default/default.component';
 import { DashboardComponent } from './shared/layout/dashboard/dashboard.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ImprintComponent } from './pages/imprint/imprint.component';
-import { NeutralComponent } from './shared/layout/neutral/neutral.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
@@ -14,26 +13,14 @@ const routes: Routes = [
     children: [
       { path: '', component: HomeComponent },
       { path: 'home', component: HomeComponent },
+      { path: 'imprint', component: ImprintComponent },
+      { path: '**', component: NotFoundComponent },
     ]
   },
   {
     path: 'dashboard',
     component: DashboardComponent,
     children: []
-  },
-  {
-    path: 'imprint',
-    component: NeutralComponent,
-    children: [
-      { path: '', component: ImprintComponent },
-    ]
-  },
-  {
-    path: '**',
-    component: NeutralComponent,
-    children: [
-      { path: '', component: NotFoundComponent },
-    ]
   },
 ];
 
