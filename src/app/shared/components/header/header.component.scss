@@ -1,0 +1,115 @@
+@import '../../../../assets/stylesheets/color.scss';
+
+.header_section {
+    overflow-x: hidden;
+    background-color: $primary2;
+
+    .container-fluid {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .nav_container {
+        margin: 0 auto;
+    }
+
+    .user_option {
+        display: flex;
+        align-items: center;
+
+        a {
+            display: flex;
+            color: $white;
+            align-items: center;
+
+            img {
+                min-width: 20px;
+                height: 20px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .custom_nav-container.navbar-expand-lg {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    padding: 10px 15px;
+                    color: $white;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .navbar-brand {
+        margin-right: 5%;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 35px;
+            margin-right: 5px;
+        }
+
+        span {
+            font-weight: bold;
+            color: $white;
+            font-size: 24px;
+        }
+    }
+
+    .custom_nav-container {
+        z-index: 99999;
+        padding: 0;
+        height: 70px;
+    }
+
+    .custom_menu-btn button {
+        margin-top: 12px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+
+    .custom_menu-btn button span {
+        display: block;
+        width: 34px;
+        height: 4px;
+        background-color: $white;
+        margin: 7px 0;
+        transition: all 0.3s;
+        border-radius: 10px;
+    }
+
+    .custom_menu-btn .s-2 {
+        transition: all 0.1s !important;
+        width: 17px !important;
+        margin-left: auto !important;
+    }
+
+    .menu_btn-style button .s-1 {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .menu_btn-style button .s-2 {
+        transform: translateX(100px);
+    }
+
+    .menu_btn-style button .s-3 {
+        transform: rotate(-45deg) translate(8px, -8px);
+    }
+
+    #navbarSupportedContent {
+        transform: translateX(100vw);
+        opacity: 0;
+        transition: all 0.3s ease-in;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #navbarSupportedContent.lg_nav-toggle {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
