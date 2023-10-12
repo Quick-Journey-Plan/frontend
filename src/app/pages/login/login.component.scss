@@ -1,0 +1,10 @@
+@import '../../../assets/stylesheets/color.scss';
+
+.btn-primary-custom {
+    background-color: $white;
+    color: $primary2;
+}
+.btn-primary-custom:hover {
+    background-color: $primary2;
+    color: $white;
+}

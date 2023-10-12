@@ -19,7 +19,7 @@ export class HomeComponent {
 
   public joinLink: Link = {
     title: 'Join',
-    href: '/register'
+    href: '/login'
   }
 
   public colImage: Image = {
