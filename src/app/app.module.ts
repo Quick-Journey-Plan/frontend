@@ -14,6 +14,7 @@ import { TextMediaComponent } from './shared/components/text-media/text-media.co
 import { TextMediaInputComponent } from './shared/components/text-media-input/text-media-input.component';
 import { ImageComponent } from './shared/components/image/image.component';
 import { TextContentComponent } from './shared/components/text-content/text-content.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TextContentComponent } from './shared/components/text-content/text-cont
     TextMediaComponent,
     TextMediaInputComponent,
     ImageComponent,
-    TextContentComponent
+    TextContentComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
