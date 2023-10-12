@@ -1,1 +1,46 @@
-<p>login works!</p>
+<div class="container mt-4 " *ngIf="isLogin">
+    <h2>Login</h2>
+    <form class="w-50">
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary-custom">Login</button>
+    </form>
+
+    <hr class="w-50" />
+
+    <div class="pb-190">
+        <span>You don't have an account?</span>
+        <div class="btn btn-link" (click)="toggle()"> Signup</div>
+    </div>
+</div>
+
+<div class="container mt-4" *ngIf="!isLogin">
+    <h2>Singup</h2>
+    <form class="w-50">
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+        </div>
+        <div class="mb-3">
+            <label for="repeat_password" class="form-label">Repeat Password</label>
+            <input type="password" class="form-control" id="repeat_password" required>
+        </div>
+        <button type="submit" class="btn btn-primary-custom">Signup</button>
+    </form>
+
+    <hr class="w-50" />
+    <div class="pb-190">
+        <span>Alredy have an account?</span>
+        <div class="btn btn-link" (click)="toggle()">Login</div>
+    </div>
+</div>

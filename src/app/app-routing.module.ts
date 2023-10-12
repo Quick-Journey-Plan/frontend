@@ -5,6 +5,7 @@ import { DashboardComponent } from './shared/layout/dashboard/dashboard.componen
 import { HomeComponent } from './pages/home/home.component';
 import { ImprintComponent } from './pages/imprint/imprint.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
       { path: '', component: HomeComponent },
       { path: 'home', component: HomeComponent },
       { path: 'imprint', component: ImprintComponent },
+      { path: 'login', component: LoginComponent },
       { path: '**', component: NotFoundComponent },
     ]
   },
